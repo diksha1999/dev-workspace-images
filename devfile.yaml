@@ -7,7 +7,7 @@ projects:
   - name: dev-workspace-images
     git:
       remotes:
-        origin: https://github.com/cgruver/dev-workspace-images.git
+        origin: https://github.com/diksha1999/dev-workspace-images.git
       checkoutFrom:
         remote: origin
         revision: main
@@ -25,7 +25,7 @@ components:
         procMount: Unmasked
   container:
     # image: image-registry.openshift-image-registry.svc:5000/devspaces-images/cekit-builder:nested 
-    image: quay.io/cgruver0/che/workspace-base:latest
+    image: quay.io/rhn_support_disharma/che/workspace:latest
     memoryLimit: 6Gi
     mountSources: true
     env:
